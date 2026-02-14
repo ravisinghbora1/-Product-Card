@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f4f4f4;
+  padding:20px;
+}
+
+.product-card{
+  background:#fff;
+  width:320px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+.product-image{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.product-content{
+  padding:20px;   /* Box model spacing */
+}
+
+.product-name{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.price{
+  font-size:18px;
+  color:#27ae60;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.description{
+  font-size:14px;
+  color:#555;
+  margin-bottom:15px;
+  line-height:1.5;
+}
+
+.add-to-cart{
+  display:block;
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  background:#007bff;
+  color:#fff;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.add-to-cart:hover{
+  background:#0056b3;
+}
+
+/* Responsive */
+@media (max-width:400px){
+  .product-card{
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="product-card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYsZFW5M-PeWzi5C8P3rtIHaFumpadd6dKQ&s" alt="Product Image" class="product-image">
+  
+  <div class="product-content">
+    <h3 class="product-name">kotioneach G2000</h3>
+    <p class="price">$30.99</p>
+    <p class="description">
+      High-quality wireless headphones with noise cancellation 
+      and long-lasting battery life, 70hrslay time,IP65 rating 
+    </p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+</body>
+</html>
